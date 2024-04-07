@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>ĐẠI HƯNG THỊNH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-    
     <section id="header">
         <div>
             <ul id="navbar">
@@ -17,11 +19,18 @@
                 <li><a href="">SẢN PHẨM</a></li>
                 <li><a href="">TIN TỨC</a></li>
                 <li><a href="">LIÊN HỆ</a></li>
+                <a href="#" id="close" class="close">
+                    <i class='fa fa-close'></i></a>
             </ul>
+            
         </div>
-        <a href="#"><b><span>ĐẠI HƯNG THỊNH</span></b></a>
+        
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+        <a href="#" id="LOGO"><b><span>ĐẠI HƯNG THỊNH</span></b></a>
     </section>
-
+    
     <section id="hero">
         <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -53,12 +62,10 @@
                 <li><a href="">NỆM CAO SU NON</a><span>/</span></li>
                 <li><a href="">NỆM FOAM</a><span>/</span></li>
                 <li><a href="">KHUYẾN MÃI</a></li>
-                <form class="search">
-                    <div class="search__wrapper">
-                        <input type="text" name="" placeholder="Search for..." class="search__field">
-                        <button type="submit" class="fa fa-search search__icon"></button>
-                    </div>
-                </form>
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                </div>
             </ul>
         </div>
     </section>
@@ -253,9 +260,10 @@
         </div>
     </section>
 
-    <section id="banner">
-        <h2>BANNER Ở ĐÂY</h2>
+    <section id="banner" class="section-m1">
+        
     </section>    
+    
     <section id="product3" class="section-p1">
         <h2>NỆM CAO SU NON</h2>
         <div class="pro-container">
@@ -550,5 +558,6 @@
     
     <script src="./javascript/slider.js"></script>
     <script src="./javascript/menubar.js"></script>
+    <script src="./javascript/hamburger_navbar.js"></script>
 </body>
 </html>

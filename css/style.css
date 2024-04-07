@@ -521,6 +521,54 @@ body {
     font-weight: 700;
 }
 
+/* PRODUCT 4 */
+#product4 {
+  text-align: center;
+}
+
+#product4 .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#product4 .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 7px 10px 15px -1px rgba(0,0,0,0.16),
+0px 3px 6px 0px rgba(0,0,0,0.23);
+  margin: 15px 0;
+  position: relative;
+}
+
+#product4 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product4 .pro .des{
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product4 .pro .des h5{
+  padding-top: 7px;
+  color: #606063;
+  font-size: 14px;
+}
+
+#product4 .pro .des h4{
+  padding-top: 7px;
+  color: pink;
+  font-size: 25px;
+  font-weight: 700;
+}
+
 /* TIN TUC SU KIEN */
 article {
     --img-scale: 1.001;

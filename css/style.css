@@ -18,6 +18,8 @@
     --input: #ffffff;
     --primary: #255ff4;
     --dur: 1s;
+    --font-color-red: #ac0631;
+    --font-color-brown: #313131;
 }
 
 *{
@@ -33,13 +35,13 @@ html {
 h1 {
     font-size: 50px;
     line-height: 64px;
-    color: #222;
+    color: var(--font-color-red);
 }
 
 h2 {
     font-size: 46px;
     line-height: 54px;
-    color: #222;
+    color: var(--font-color-red);
 }
 
 h4 {
@@ -277,195 +279,93 @@ body {
     text-align: center;
   }
 
-  #product1 .pro-container{
+ .pro-container{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
 }
 
- #product1 .pro{
+ .pro{
     width: 23%;
     min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
+    padding: 0px 12px;
+    /* border: 1px solid #cce7d0;
+    border-radius: 25px; */
     cursor: pointer;
-    box-shadow: 7px 10px 15px -1px rgba(0,0,0,0.16),
-0px 3px 6px 0px rgba(0,0,0,0.23);
+    /* box-shadow: 7px 10px 15px -1px rgba(0,0,0,0.16),
+0px 3px 6px 0px rgba(0,0,0,0.23); */
+    background: gray;
     margin: 15px 0;
     position: relative;
   }
 
-  #product1 .pro img {
+.pro img {
     width: 100%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
-#product1 .pro .des{
-    text-align: start;
+.pro .des{
+    justify-content: center;
+    text-align: center;
+    
     padding: 10px 0;
 }
 
-#product1 .pro .des h5{
+
+.pro .des p{
+    font-size: 20px;
+}
+.pro .des h5{
     padding-top: 7px;
-    color: #606063;
-    font-size: 14px;
+    color: black;
+    font-size: 24px;
+    font-weight: normal;
 }
 
-#product1 .pro .des h4{
+.pro .des h4{
     padding-top: 7px;
-    color: pink;
-    font-size: 25px;
+    color: var(--font-color-red);
+    font-size: 35px;
     font-weight: 700;
 }
 
+.des p{
+  color: yellow;
+  text-decoration: line-through;
+  font-size: 30px;
+  margin: 0 0;
+  margin-top: 20px;
+}
+
+.discount h3{
+  color: var(--font-color-red);
+  background: yellow;
+  width: fit-content;
+  font-size: 26px;
+  display: block;
+  margin: 0 70%;
+  padding: 0 0;
+  margin-top: 20px;
+}
   /* PRODUCT 2 */
 
   #product2 {
     text-align: center;
   }
 
-  #product2 .pro-container{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    flex-wrap: wrap;
-}
-
- #product2 .pro{
-    width: 23%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 7px 10px 15px -1px rgba(0,0,0,0.16),
-0px 3px 6px 0px rgba(0,0,0,0.23);
-    margin: 15px 0;
-    position: relative;
-  }
-
-  #product2 .pro img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-#product2 .pro .des{
-    text-align: start;
-    padding: 10px 0;
-}
-
-#product2 .pro .des h5{
-    padding-top: 7px;
-    color: #606063;
-    font-size: 14px;
-}
-
-#product2 .pro .des h4{
-    padding-top: 7px;
-    color: pink;
-    font-size: 25px;
-    font-weight: 700;
-}
-
+  
   /* PRODUCT 3 */
   #product3 {
-    margin: 60px 0;
-
     text-align: center;
   }
 
-  #product3 .pro-container{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    flex-wrap: wrap;
-}
-
- #product3 .pro{
-    width: 23%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 7px 10px 15px -1px rgba(0,0,0,0.16),
-0px 3px 6px 0px rgba(0,0,0,0.23);
-    margin: 15px 0;
-    position: relative;
-  }
-
-  #product3 .pro img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-#product3 .pro .des{
-    text-align: start;
-    padding: 10px 0;
-}
-
-#product3 .pro .des h5{
-    padding-top: 7px;
-    color: #606063;
-    font-size: 14px;
-}
-
-#product3 .pro .des h4{
-    padding-top: 7px;
-    color: pink;
-    font-size: 25px;
-    font-weight: 700;
-}
-
+ 
 /* PRODUCT 4 */
 #product4 {
   text-align: center;
 }
 
-#product4 .pro-container{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-  flex-wrap: wrap;
-}
-
-#product4 .pro{
-  width: 23%;
-  min-width: 250px;
-  padding: 10px 12px;
-  border: 1px solid #cce7d0;
-  border-radius: 25px;
-  cursor: pointer;
-  box-shadow: 7px 10px 15px -1px rgba(0,0,0,0.16),
-0px 3px 6px 0px rgba(0,0,0,0.23);
-  margin: 15px 0;
-  position: relative;
-}
-
-#product4 .pro img {
-  width: 100%;
-  border-radius: 20px;
-}
-
-#product4 .pro .des{
-  text-align: start;
-  padding: 10px 0;
-}
-
-#product4 .pro .des h5{
-  padding-top: 7px;
-  color: #606063;
-  font-size: 14px;
-}
-
-#product4 .pro .des h4{
-  padding-top: 7px;
-  color: pink;
-  font-size: 25px;
-  font-weight: 700;
-}
 /* BANNER */
 #banner{
   justify-content: center;
@@ -492,28 +392,30 @@ body {
 0px 32px 32px 0px rgba(0,0,0,0.11);
 } */
 /* TIN TUC SU KIEN */
+.news {
+  padding: 40px 80px;
+}
+
 article {
     --img-scale: 1.001;
     --title-color: black;
     --link-icon-translate: -20px;
-    --link-icon-opacity: 0;
-    
+    --link-icon-opacity: 0; 
     border-radius: 16px;
     box-shadow: none;
     background: #fff;
-    border: 2px solid black;
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
   }
   
-  article a::after {
-    position: absolute;
-    inset-block: 0;
-    inset-inline: 0;
-    cursor: pointer;
-    content: "";
-  }
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
 
 .news h1 {
     align-items: center;  
@@ -522,27 +424,26 @@ article {
 }
   
   /* basic article elements styling */
-  article h2 {
+article h2 {
     margin: 0 0 18px 0;
     font-size: 1.9rem;
     letter-spacing: 0.06em;
     color: var(--title-color);
     transition: color 0.3s ease-out;
-  }
+}
   
-  figure {
+figure {
     margin: 0;
     padding: 0;
-    aspect-ratio: 16 / 9;
     overflow: hidden;
-  }
+}
   
-  article img {
+article img {
     max-width: 100%;
     transform-origin: center;
     transform: scale(var(--img-scale));
     transition: transform 0.4s ease-in-out;
-  }
+}
   
   .article-body {
     padding: 24px;
@@ -578,24 +479,22 @@ article {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
     
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+
   
 .articles {
-    padding: 48px 0;
+    padding: 48px 80;
     display: flex;
-   
-    max-width: 1200px;
+    background: #000;
+    margin: 20px 0;
+    padding: 40px 80px;
+    max-width: 100%;
     margin-inline: auto;
     padding-inline: 24px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 24px;
   }
   
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1000px) {
     article {
       container: card/inline-size;
     }

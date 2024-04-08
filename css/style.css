@@ -75,10 +75,11 @@ body {
   /*Header*/
 
 #header{
+  width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px 30rem;
+    padding: 20px 0;
     margin-top: 10px;;
     background: #ffffff;
     box-shadow: 20px 39px 29px -27px rgba(0,0,0,0.45);
@@ -91,12 +92,19 @@ body {
 #navbar{
     display: flex;
     align-items: center;
-}
+    justify-content: space-between;
 
+}
+#LOGO img{
+  margin-right:  200px;
+  padding-left: 200px;
+}
 #navbar li{
     list-style: none;
     padding: 0 20px;
     padding-right: 20px;
+    justify-content: left;
+    left: 0;
 }
 
 #navbar li a{
@@ -307,9 +315,11 @@ body {
 
 .pro .des{
     justify-content: center;
-    text-align: center;    
+    text-align: center;
+    
     padding: 10px 0;
 }
+
 
 .pro .des p{
     font-size: 20px;
@@ -320,6 +330,7 @@ body {
     font-size: 24px;
     font-weight: normal;
 }
+
 .pro .des h4{
     padding-top: 7px;
     color: var(--font-color-red);
@@ -350,7 +361,8 @@ body {
   #product2 {
     text-align: center;
   }
- 
+
+  
   /* PRODUCT 3 */
   #product3 {
     text-align: center;
@@ -592,7 +604,7 @@ article img {
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 0; right: -300px;
+    top: 0; left: -300px;
     height: 100vh;
     width: 300px;
     background-color: transparent;
@@ -601,7 +613,7 @@ article img {
     transition: 0.3s ease-in-out;
   }
   #navbar.active{
-    right: 0px;
+    left: 0px;
   }
 
   #navbar #LOGO{

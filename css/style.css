@@ -307,11 +307,9 @@ body {
 
 .pro .des{
     justify-content: center;
-    text-align: center;
-    
+    text-align: center;    
     padding: 10px 0;
 }
-
 
 .pro .des p{
     font-size: 20px;
@@ -322,7 +320,6 @@ body {
     font-size: 24px;
     font-weight: normal;
 }
-
 .pro .des h4{
     padding-top: 7px;
     color: var(--font-color-red);
@@ -353,8 +350,7 @@ body {
   #product2 {
     text-align: center;
   }
-
-  
+ 
   /* PRODUCT 3 */
   #product3 {
     text-align: center;
